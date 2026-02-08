@@ -1,0 +1,5 @@
+# https://www.navidrome.org/docs/usage/configuration/options/#available-options
+
+MusicFolder = '/home/jacob/music'
+LastFM.ApiKey= '4e668338a5389eaa5b59b5a13f1d0174'
+LastFM.Secret= '7649f632d532d3e94946f6ffbc8e7e91'

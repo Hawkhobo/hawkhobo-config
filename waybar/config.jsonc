@@ -1,0 +1,53 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    // "height": 38, // Waybar height (to be removed for auto height)
+    "spacing": 2, // Gaps between modules (4px)
+    "modules-left": [
+        "custom/appmenu1",
+        "custom/appmenu2",
+        "wlr/taskbar"
+    ],
+    "modules-right": [
+        "battery",
+        "clock",
+        "tray"
+    ],
+    "custom/appmenu1": {
+      "format": "        ",
+      "on-click": "rofi -show drun -replace -i -sidebar-mode -sort",
+      "icon-size": 50 
+    },
+    "custom/appmenu2": {
+      "format": "    ",
+      "on-click": "rofi -show window",
+      "icon-size": 30
+    },
+    "wlr/taskbar": {
+      "format": "{icon}",
+      "icon-size": 26,
+      "on-click": "activate",
+      "tooltip": true,
+      "invert-scroll": true
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-good": "", // An empty format will hide the module
+        "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    }
+}

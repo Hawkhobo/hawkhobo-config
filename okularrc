@@ -1,0 +1,31 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=false
+
+[Recent Files]
+File1[$e]=$HOME/ucd/stripe_cl.pdf
+File10[$e]=$HOME/downloads/potato_salad_recipe.pdf
+File2[$e]=$HOME/ucd/wq26/eec172/slides/SPI.pdf
+File3[$e]=$HOME/downloads/mmr_vaccination.pdf
+File4[$e]=$HOME/ucd/MyResume.pdf
+File5[$e]=$HOME/.cache/.fr-RQIYJ3/ieeetran-latex-template/bare_jrnl_new_sample4.pdf
+File6[$e]=$HOME/ucd/wq26/eec172/labs/reports/lab2.pdf
+File7[$e]=$HOME/ucd/wq26/eec172/slides/2_busses_and_dma.pdf
+File8[$e]=$HOME/ucd/wq26/ecs199/papers/cornflakes.pdf
+File9[$e]=$HOME/ucd/wq26/ecs193/sample_reqs/Req. Doc [sample 1].pdf
+Name1[$e]=stripe_cl.pdf
+Name10[$e]=potato_salad_recipe.pdf
+Name2[$e]=SPI.pdf
+Name3[$e]=mmr_vaccination.pdf
+Name4[$e]=MyResume.pdf
+Name5[$e]=bare_jrnl_new_sample4.pdf
+Name6[$e]=lab2.pdf
+Name7[$e]=2_busses_and_dma.pdf
+Name8[$e]=cornflakes.pdf
+Name9[$e]=Req. Doc [sample 1].pdf
+
+[UiSettings]
+ColorScheme=BreezeDark

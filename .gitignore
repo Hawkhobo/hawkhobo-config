@@ -1,0 +1,37 @@
+# ignore discord/ directory, except for configuration files
+discord/*
+!discord/
+!discord/*.json
+
+# ignore Navidrome dependencies
+*navidrome.db
+*cache
+
+# don't include bank container files (spotify and other audio services)
+*.bnk
+
+# SQL files
+*sqlite*
+
+*.xml
+
+# ignore non-configurable applications (or those configured in-session)
+teams-for-linux/
+libreoffice/
+jxbrowser/
+hyperbeam/
+font-manager/
+go/
+evolution/
+dconf/
+Slack/
+Signal/
+Notion/
+Code/
+GIMP/
+LyX/
+strawberry/
+
+# ignore build files and dad's dotfiles
+*dotfiles.2026*
+*.tgz

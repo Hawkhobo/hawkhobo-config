@@ -1,0 +1,223 @@
+@import "mocha.css";
+
+* {
+  font-family: "Roboto", "JetBrainsMono Nerd Font", sans-serif; 
+  font-size: 10px;
+  font-weight: 500;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  /* background: transparent; */
+  /* background:  rgba(0, 114, 202, 0.317); */
+  background: rgba(66, 8, 53, 0.4);
+  border-bottom: 2px solid rgba(243, 139, 168, 0.7);
+}
+
+#workspaces,
+#window,
+#submap,
+#clock,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#backlight,
+#idle_inhibitor,
+#tray {
+  /* background: #1e1e2ea; */
+  background: #420835;
+  /* padding: 3px 6px;
+  margin: 0px;
+  border-radius: 8px;*/
+  padding: 1px 2px;
+  margin: 1px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(1, 232, 249, 0.576);
+}
+
+/* Workspaces */
+#workspaces {
+  padding: 2px 2px;
+}
+
+#workspaces button {
+  padding: 2px 4px;
+  border-radius: 2px;
+  background: transparent;
+  color: #6c7086;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#workspaces button:hover {
+  background: #313244;
+  color: #cdd6f4;
+}
+
+#workspaces button.active {
+  background: linear-gradient(135deg, #89b4fa 0%, #b4befe 100%);
+  color: #1e1e2e;
+  box-shadow: 0 1px 4px rgba(137, 180, 250, 0.4);
+}
+
+#workspaces button.urgent {
+  background: #f38ba8;
+  color: #1e1e2e;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(243, 139, 168, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(243, 139, 168, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(243, 139, 168, 0.7);
+  }
+}
+
+/* Window title */
+#window {
+  color: #cdd6f4;
+  font-weight: 400;
+}
+
+/* Clock */
+#clock {
+  background: linear-gradient(135deg, #89b4fa 0%, #cba6f7 100%);
+  color: #1e1e2e;
+  font-weight: 600;
+  padding: 1px 2px;
+}
+
+/* CPU */
+#cpu {
+  background: #1e1e2e;
+  color: #a6e3a1;
+}
+
+/* Memory */
+#memory {
+  background: #1e1e2e;
+  color: #89dceb;
+}
+
+/* Battery */
+#battery {
+  background: #1e1e2e;
+  color: #a6e3a1;
+}
+
+#battery.charging {
+  color: #a6e3a1;
+  animation: glow 2s ease-in-out infinite;
+}
+
+#battery.warning:not(.charging) {
+  color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+  color: #f38ba8;
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 2px 4px rgba(166, 227, 161, 0.3);
+  }
+  50% {
+    box-shadow: 0 2px 8px rgba(166, 227, 161, 0.6);
+  }
+  100% {
+    box-shadow: 0 2px 4px rgba(166, 227, 161, 0.3);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Network */
+#network {
+  background: #1e1e2e;
+  color: #fab387;
+}
+
+#network.disconnected {
+  color: #6c7086;
+}
+
+/* Audio */
+#pulseaudio {
+  background: #1e1e2e;
+  color: #f5c2e7;
+}
+
+#pulseaudio.muted {
+  color: #6c7086;
+}
+
+/* System Tray */
+#tray {
+  background: #1e1e2e;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Submap indicator */
+#submap {
+  background: linear-gradient(135deg, #f38ba8 0%, #eba0ac 100%);
+  color: #1e1e2e;
+  font-weight: 600;
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Idle inhibitor */
+#idle_inhibitor {
+  background: #1e1e2e;
+  color: #f9e2af;
+}
+
+#idle_inhibitor.activated {
+  background: linear-gradient(135deg, #f9e2af 0%, #fab387 100%);
+  color: #1e1e2e;
+}
+
+/* Backlight */
+#backlight {
+  background: #1e1e2e;
+  color: #f9e2af;
+}
+
+/* Tooltips */
+tooltip {
+  background: #1e1e2e;
+  border: 2px solid #313244;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+tooltip label {
+  color: #cdd6f4;
+}

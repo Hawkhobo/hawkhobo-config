@@ -1,0 +1,13 @@
+[CompactMode]
+PreviewSize=64
+
+[General]
+Version=202
+ViewPropsTimestamp=2025,12,25,23,3,1.88
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[UiSettings]
+ColorScheme=BreezeDark

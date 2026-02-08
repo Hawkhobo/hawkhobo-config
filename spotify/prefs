@@ -1,0 +1,13 @@
+autologin.username="jacob.d.feenstra"
+autologin.saved_credentials="{\"jacob.d.feenstra\":[\"jacob.d.feenstra\",\"qwQr/oU8FOwtYyd09C8U+EEir2AK22oRzdjvW8sr1ZQlCuEEwzKOPu0Tj5Koi4e0RuGcWRD0TUw0Vifd1EqsO4Jk+JjeGQPTv5H0DFlNglNiSVvIhiiaDPOIK+fo8s8JiCSLeO4C+SOHaqYDXtqp5fragyLu/BnsrUCJyPSuMEqNDtb5bgR6/FBsIZhc2E8UpSE8gEc9niTiMhpBGAJs8rxnf4V5waSLuXZ1sPS1JnPmHmC0qV2F0qWu8mQHxOwYeqttQ0spoPSXtHQDzm5CYw==\"]}"
+autologin.canonical_username="jacob.d.feenstra"
+autologin.blob="qwQr/oU8FOwtYyd09C8U+EEir2AK22oRzdjvW8sr1ZQlCuEEwzKOPu0Tj5Koi4e0RuGcWRD0TUw0Vifd1EqsO4Jk+JjeGQPTv5H0DFlNglNiSVvIhiiaDPOIK+fo8s8JiCSLeO4C+SOHaqYDXtqp5fragyLu/BnsrUCJyPSuMEqNDtb5bgR6/FBsIZhc2E8UpSE8gEc9niTiMhpBGAJs8rxnf4V5waSLuXZ1sPS1JnPmHmC0qV2F0qWu8mQHxOwYeqttQ0spoPSXtHQDzm5CYw=="
+app.window.state.saved=true
+app.window.position.width=1262
+es.send-on-startup=true
+core.clock_delta=0
+app.window.state=2
+app.window.position.saved=true
+app.window.position.height=744
+storage.last-location="/home/jacob/.cache/spotify/Storage"
+app.last-launched-version="1.2.79.427.g80eb4a07"
