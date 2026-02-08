@@ -1,0 +1,22 @@
+# frozen_string_literal: true
+#
+# Install:  'ruby-build' and 'rbenv', then rbenv install <version number>
+# Do gem installs with:  'bundler install'
+# Do Psych/YAML dependencies (ArchLinux, sudo pacman -S <>):
+#   yaml-cpp python-yaml libyaml libfyaml haskell-libyaml haskell-yaml yamllint
+
+source "https://rubygems.org"
+
+gem "rails"
+gem "bundler"
+gem "fpm"
+gem "faraday"
+gem "nokogiri"
+gem "colorize"
+gem "rufo"
+gem "rspec"
+gem "yaml"
+gem "json"
+gem "rails"
+gem "pg"
+gem "date"
