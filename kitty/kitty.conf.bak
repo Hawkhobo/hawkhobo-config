@@ -1,0 +1,11 @@
+font_size 8
+scrollback_lines 10000
+background_opacity 0.82
+cursor_trail 1
+
+allow_remote_control yes
+listen_on unix:/tmp/mykitty
+
+# ctrl + shift + t maintains working directory of previous session
+map ctrl+shift+t launch --cwd=current --type=tab
+
