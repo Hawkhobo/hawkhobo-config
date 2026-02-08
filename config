@@ -1,0 +1,23 @@
+
+[audgui]
+filesel_path=/home/jacob/music/sasha_and_john_digweed/Northern Exposure 2 (Eastcoast Edition)
+
+[audqt]
+theme=dark
+
+[pipewire]
+volume_left=74
+volume_right=74
+
+[qtui]
+player_height=744
+player_width=1262
+
+[scrobbler]
+session_key=LIoXOwUOxQHIoxgVZfX2OQCx6SWSp6lW
+
+[search-tool]
+path=/home/jacob/music
+
+[skins]
+skin=/usr/share/audacious/Skins/Default
