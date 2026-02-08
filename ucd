@@ -4,9 +4,7 @@ alias ecs193="cd /home/jacob/ucd/wq26/ecs193"
 alias ecs199="cd /home/jacob/ucd/wq26/ecs199"
 
 # current hw assignments
-alias ecs179hw="cd /home/jacob/ucd/fq25/ecs179/exercises/myexercises/exercise-3-Hawkhobo"
-alias ecs122hw="cd /home/jacob/ucd/sq25/ecs122b/hw"
-alias ecs160hw="cd /home/jacob/ucd/fq25/ecs160/homework/hw3/"
+alias eec172lab="cd /home/jacob/ucd/wq26/eec172/labs/lab1/"
 
 # print directory 6-deep from current working directory. for use in ECS160 hw
 alias l6="l */*/*/*/*/*/*"

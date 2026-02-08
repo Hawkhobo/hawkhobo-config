@@ -1,4 +1,4 @@
-alias gst="git status"
+alias gst="git status" 
 alias ga="git add"
 alias gall="git add ."
 alias gcm="git commit -m"
@@ -19,3 +19,10 @@ alias ghead="git log --oneline | head "
 
 # pass all currently unmerged paths to text editor in sequence (hint: use ":wn" to iterate for nvim)
 alias gmerge="git diff --name-only --diff-filter=U | xargs -o nvim"
+
+# open the current remote in Firefox
+repo() {
+    local url=$(git remote get-url origin | sed -e 's|git@github.com:|https://github.com/|' -e 's|\.git$||')
+
+    firefox "$url"
+}

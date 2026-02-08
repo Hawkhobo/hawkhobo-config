@@ -13,3 +13,14 @@ alias ltx="ls -t | head -n 1 | xargs xdg-open"
 
 # count number of visible entries in topmost parent directory of WD
 alias dir_top="ls -1F | grep -v / | wc -l"
+
+# download directory of soulseek nicotine+ app
+alias slsk-dir="cd /home/jacob/.local/share/nicotine/downloads"
+
+# shortcut for markdown software of choice
+md() {
+    frogmouth "$@"
+}
+
+# arch-wiki-docs main
+alias arch-wiki-docs="cd /usr/share/doc/arch-wiki/html/en"
