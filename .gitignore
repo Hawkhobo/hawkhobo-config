@@ -38,3 +38,11 @@ strawberry/
 *.tgz
 
 *config.old
+
+# specific config files that are auto-generated
+QtProject.conf
+audacity/audacity.cfg
+kid3rc
+nicotine/config
+okularrc
+zoomus.conf
