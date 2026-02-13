@@ -22,6 +22,7 @@ jxbrowser/
 hyperbeam/
 font-manager/
 go/
+texlive/
 evolution/
 dconf/
 Slack/
@@ -35,3 +36,5 @@ strawberry/
 # ignore build files and dad's dotfiles
 *dotfiles.2026*
 *.tgz
+
+*config.old
