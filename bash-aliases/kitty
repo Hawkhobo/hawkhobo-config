@@ -1,0 +1,4 @@
+# kitty terminal emulator
+
+# prints working directory of previously active kitty terminal (as defined by hyprland window focusing)
+alias prev-pwd='kitten @ ls | jq -r ".[].tabs[].windows[] | select(.is_focused=false) | .cwd" | head -n 1'

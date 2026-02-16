@@ -1,0 +1,7 @@
+## system aliases to query the machine ##
+
+# current battery percentage at time of execution
+alias batt_percent="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep 'percentage'"
+
+# fetch computer IPv4
+alias hostname="ip -4 addr show | grep inet | sed -n '2p'"

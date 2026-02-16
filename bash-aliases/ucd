@@ -1,0 +1,25 @@
+# jump to in-progress UCD class directories
+alias eec172="cd /home/jacob/ucd/wq26/eec172"
+alias ecs193="cd /home/jacob/ucd/wq26/ecs193"
+alias ecs199="cd /home/jacob/ucd/wq26/ecs199"
+
+# current hw assignments
+alias eec172lab="cd /home/jacob/ucd/wq26/eec172/labs/lab1/"
+
+# print directory 6-deep from current working directory. for use in ECS160 hw
+alias l6="l */*/*/*/*/*/*"
+
+# create a libre-office copy of the GameProject.md for ECS 179
+alias libre-game-project="pandoc GameProject.md -f markdown -t odt -s -o GameProject.odt"
+
+# ecs 163 final project
+alias bayarea="cd /home/jacob/ucd/sq25/ecs163/Bay-Area-Gentrification"
+
+# jump to directory of godot-4 projects
+alias godot-projects="cd /home/jacob/.local/share/godot/app_userdata"
+
+# ecs 179 videogame!
+alias lunarium="cd /home/jacob/ucd/fq25/ecs179/lunarium/"
+
+# capstone project
+alias firstlook="cd /home/jacob/ucd/wq26/ecs193/FirstLook-SIEM/"

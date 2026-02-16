@@ -1,0 +1,17 @@
+# bash aliases that user hyprland's extensive hyprctl functionality
+
+# Close all Hyprland windows of a specific class
+close_class() {
+    local target_class="$1"
+    
+    # Check if an argument was provided
+    if [[ -z "$target_class" ]]; then
+        echo "Usage: close_class <WindowClassName>"
+        return 1
+    fi
+
+    # Use --arg to safely pass the bash variable into jq
+    hyprctl -j clients | \
+    jq -r --arg class "$target_class" '.[] | select(.class == $class) | .address' | \
+    xargs -I {} hyprctl dispatch closewindow address:{}
+}

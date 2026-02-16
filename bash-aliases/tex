@@ -1,0 +1,5 @@
+# run system-wide tex live manager gui with system perms
+alias tl-manager="sudo /usr/local/texlive/2025/bin/x86_64-linux/tlmgr gui"
+
+# system-wide TeX Live 2025 binary, documentation, and more
+alias texlive="cd /usr/local/texlive/2025"

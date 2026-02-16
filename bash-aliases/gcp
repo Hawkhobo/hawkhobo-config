@@ -1,0 +1,21 @@
+# check gcpeanuts VM instance
+alias gcp-status="gcloud compute instances list"
+# start gcpeanuts
+alias gcp-start="gcloud compute instances start gcpeanuts-alpha --zone=us-west1-b"
+# stop gcpeanuts
+alias gcp-stop="gcloud compute instances stop gcpeanuts-alpha"
+# ssh into the virtual machine instance for the Google Cloud Platform WSC implementation in ECS 189D
+function gcp-ssh {
+    # fetch gcpeanuts-alpha's External IPv4 for the current running instance
+    EXTERNAL_IP=$(gcloud compute instances describe gcpeanuts-alpha \
+        --zone=us-west1-b \
+        --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
+
+    if [ -z "$EXTERNAL_IP" ]; then
+        echo "Error: Could not retrieve external IP for gcpeanuts-alpha." >&2
+        return 1
+    fi
+
+    # run the ssh command. Agent forward SSH keys for using GitHub on the VM instance
+    ssh -A -i /home/hawkhobo/.ssh/google_compute_engine hawkhobo@$EXTERNAL_IP
+}
