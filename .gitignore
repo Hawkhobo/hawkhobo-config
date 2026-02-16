@@ -32,6 +32,7 @@ Code/
 GIMP/
 LyX/
 strawberry/
+obs-studio/
 
 # ignore build files and dad's dotfiles
 *dotfiles.2026*
