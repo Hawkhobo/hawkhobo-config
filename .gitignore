@@ -4,7 +4,7 @@ discord/*
 !discord/*.json
 
 # ignore Navidrome dependencies
-*navidrome.db
+*navidrome.db*
 *cache
 
 # don't include bank container files (spotify and other audio services)
