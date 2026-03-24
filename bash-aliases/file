@@ -33,3 +33,6 @@ alias arch-wiki-docs="cd /usr/share/doc/arch-wiki/html/en"
 alias nd="cd /home/jacob/.config/navidrome/ && sudo killall navidrome || true && navidrome"
 
 alias desktops="cd /home/jacob/.local/share/applications"
+
+# pictures stored in Steam (update if needed)
+alias steam_pics = "cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
