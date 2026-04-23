@@ -7,6 +7,7 @@ xo() {
 alias docker_desktop="systemctl --user start docker-desktop"
 
 # ls aliases
+alias llh="ls | head"
 lth() {
   ls -t "${1:-.}" | head -n 1
 }
@@ -35,4 +36,4 @@ alias nd="cd /home/jacob/.config/navidrome/ && sudo killall navidrome || true &&
 alias desktops="cd /home/jacob/.local/share/applications"
 
 # pictures stored in Steam (update if needed)
-alias steam_pics = "cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
+alias steam_pics="cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
