@@ -21,3 +21,6 @@ shopt -s extglob
 
 # default (see bind -q edit-and-execute-command
 export VISUAL=nvim
+
+# fuzzy finder config
+export FZF_DEFAULT_OPTS="--layout=reverse --height=40% --bind 'ctrl-j:down,ctrl-k:up,ctrl-a:select-all,ctrl-d:deselect-all'"

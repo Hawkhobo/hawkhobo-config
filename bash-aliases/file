@@ -1,3 +1,4 @@
+#
 # run xdg-open & free terminal session without killing running process
 xo() {
     xdg-open "$@" &>/dev/null 2>1 & disown
@@ -37,3 +38,6 @@ alias desktops="cd /home/jacob/.local/share/applications"
 
 # pictures stored in Steam (update if needed)
 alias steam_pics="cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
+
+# rm interactive; use fzf to select a subset of files for deletion if there is no underlying pattern to leverage
+alias rmi="ls | fzf -m | xargs rm"
