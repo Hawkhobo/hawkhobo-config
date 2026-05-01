@@ -3,6 +3,8 @@ discord/*
 !discord/
 !discord/*.json
 
+bash-aliases/discord
+
 # ignore Navidrome dependencies
 *navidrome.db*
 *cache
