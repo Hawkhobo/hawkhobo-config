@@ -5,7 +5,7 @@ discord/*
 
 bash-aliases/discord
 # only save Qbittorrent settings
-./qBittorrent/*
+qBittorrent/*
 !qBittorrent/
 !qBittorrent/*.conf
 
