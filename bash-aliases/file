@@ -19,7 +19,7 @@ alias ltr="ls -t | head -n 1 | xargs rm"
 alias dir_top="ls -1F | grep -v / | wc -l"
 
 # download directory of soulseek nicotine+ app
-alias slsk-dir="cd /home/jacob/.local/share/nicotine/downloads"
+export SLSK="/home/jacob/.local/share/nicotine/downloads"
 
 # shortcut for markdown software of choice
 md() {
@@ -39,5 +39,5 @@ alias desktops="cd /home/jacob/.local/share/applications"
 # pictures stored in Steam (update if needed)
 alias steam_pics="cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
 
-# rm interactive; use fzf to select a subset of files for deletion if there is no underlying pattern to leverage
-alias rmi="ls | fzf -m | xargs rm"
+# rm interactive; use fzf to select a subset of files for deletion if there is no underlying pattern to leverage. Handles commas and spaces.
+alias rmi='find . -maxdepth 1 -type f -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 rm'
