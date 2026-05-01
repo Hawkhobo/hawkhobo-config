@@ -1,9 +1,9 @@
 # jump to in-progress UCD class directories
 alias eec172="cd /home/jacob/ucd/wq26/eec172"
-alias ecs193="cd /home/jacob/ucd/wq26/ecs193"
 alias ecs199="cd /home/jacob/ucd/wq26/ecs199"
 
 alias ecs153a="cd /home/jacob/ucd/sq26/ecs153a/"
+alias ecs193="cd /home/jacob/ucd/sq26/ecs193"
 
 # current hw assignments
 alias eec172lab="cd /home/jacob/ucd/wq26/eec172/labs/lab1/"
@@ -24,4 +24,4 @@ alias godot-projects="cd /home/jacob/.local/share/godot/app_userdata"
 alias lunarium="cd /home/jacob/ucd/fq25/ecs179/lunarium/"
 
 # capstone project
-alias firstlook="cd /home/jacob/ucd/wq26/ecs193/FirstLook-SIEM/"
+alias firstlook="cd /home/jacob/ucd/sq26/ecs193/FirstLook-SIEM/"

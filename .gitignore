@@ -4,6 +4,10 @@ discord/*
 !discord/*.json
 
 bash-aliases/discord
+# only save Qbittorrent settings
+./qBittorrent/*
+!qBittorrent/
+!qBittorrent/*.conf
 
 # ignore Navidrome dependencies
 *navidrome.db*
