@@ -41,6 +41,7 @@ GIMP/
 LyX/
 strawberry/
 obs-studio/
+zoom/
 
 # ignore build files and dad's dotfiles
 *dotfiles.2026*
@@ -55,3 +56,7 @@ kid3rc
 nicotine/config
 okularrc
 zoomus.conf
+
+#miscellanous
+emaildefaults
+menus/
