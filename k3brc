@@ -1,4 +1,9 @@
+[Devices]
+ASUS SDRW-08U9M-U=4234,11080
+
 [External Programs]
+cdrdao default=/usr/bin/cdrdao
+cdrdao last seen newest version=1.2.6
 cdrdao user parameters=
 cdrecord default=/usr/bin/cdrecord
 cdrecord last seen newest version=3.2a09
@@ -6,8 +11,12 @@ cdrecord user parameters=
 cdrskin default=/usr/bin/cdrskin
 cdrskin last seen newest version=1.5.8
 cdrskin user parameters=
+dvd+rw-format default=/usr/bin/dvd+rw-format
+dvd+rw-format last seen newest version=7.1
 dvd+rw-format user parameters=
 eMovix user parameters=
+growisofs default=/usr/bin/growisofs
+growisofs last seen newest version=7.1
 growisofs user parameters=
 mkisofs default=/usr/bin/mkisofs
 mkisofs last seen newest version=3.2a09
