@@ -9,6 +9,8 @@ bash-aliases/discord
 *navidrome.db*
 *cache
 
+bash-aliases/discord
+
 # don't include bank container files (spotify and other audio services)
 *.bnk
 
