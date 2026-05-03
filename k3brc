@@ -45,6 +45,13 @@ burnfree=true
 check system config=true
 config version=26.4.0
 current theme=quant
+current_writer=/dev/sr0
+
+[Recent Files]
+File1[$e]=$HOME/music/AudioCD0
+File2[$e]=$HOME/music/KDVS/KDVS Currents 1
+Name1[$e]=AudioCD0
+Name2[$e]=KDVS Currents 1
 
 [Welcome Widget]
 welcome_actions=file_new_data,file_new_audio,tools_copy_medium
@@ -62,3 +69,21 @@ Sort reversed=false
 View Style=DetailTree
 last url[$e]=$HOME/
 show bookmarks=false
+
+[last used default audio settings]
+cd_text=true
+copies=1
+hide_first_track=false
+ignore read errors=false
+image path[$e]=$HOME/vids
+normalize=false
+on_the_fly=true
+only_create_image=false
+paranoia mode=0
+read retries=128
+remove_image=true
+simulate=false
+writer_device=/dev/sr0
+writing_app=Auto
+writing_mode=auto
+writing_speed=0
