@@ -10,6 +10,7 @@ qBittorrent/*
 !qBittorrent/*.conf
 
 # ignore Navidrome dependencies
+navidrome/plugins
 *navidrome.db*
 *cache
 

@@ -3,3 +3,4 @@
 MusicFolder = '/home/jacob/music'
 LastFM.ApiKey= 'a4245e11b36beaee94aaa5153e10f20b'
 LastFM.Secret= '7649f632d532d3e94946f6ffbc8e7e91'
+LyricsPriority = ".lrc,lrclib-lyrics,<others...>"
