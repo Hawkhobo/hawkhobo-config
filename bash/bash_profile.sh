@@ -16,6 +16,8 @@ if command -v ruby; then
   export PATH="$PATH:$GEM_HOME/bin"
 fi
 
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # extended globbing for better pattern matching with bash commands
 shopt -s extglob
 
