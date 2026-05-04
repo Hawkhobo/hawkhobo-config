@@ -1,0 +1,4 @@
+# shortcut for markdown software of choice
+md() {
+    mdterm "$@"
+}
