@@ -1,2 +1,2 @@
 # clear erroneous bluetooth key for Soundscore A40's
-alias clear-connection-key="sudo rm -rf /var/lib/bluetooth/9C:65:EB:2F:0F:B6/88:0E:85:83:0D:6E"
+alias clear-connection-key="sudo rm -rf /var/lib/bluetooth/9C:65:EB:2F:0F:B6/A4:77:58:5D:9A:CA"
