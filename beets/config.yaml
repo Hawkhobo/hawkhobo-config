@@ -7,9 +7,12 @@ import:
 
 plugins:
   - musicbrainz # to fetch metadata
-  - hook export
+  - hook
+  - export
 
+
+# At the end of an import process, dump current state of library into version-controlled json file
 hook:
   hooks:
-    - event: import
+    - event: cli_exit
       command: 'beet export -a -f json -o ~/.config/library.json'
