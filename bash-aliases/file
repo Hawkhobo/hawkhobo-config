@@ -20,6 +20,8 @@ alias dir_top="ls -1F | grep -v / | wc -l"
 
 # download directory of soulseek nicotine+ app
 export SLSK="/home/jacob/.local/share/nicotine/downloads"
+# my music library
+export MUSIC="$HOME/music"
 
 
 
