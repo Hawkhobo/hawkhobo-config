@@ -1,0 +1,15 @@
+directory: ~/music
+library: ~/.config/beets/musiclibrary.db
+
+import:
+  copy: no  # Use files in place
+  write: no # Don't modify tags
+
+plugins:
+  - musicbrainz # to fetch metadata
+  - hook export
+
+hook:
+  hooks:
+    - event: import
+      command: 'beet export -a -f json -o ~/.config/library.json'
