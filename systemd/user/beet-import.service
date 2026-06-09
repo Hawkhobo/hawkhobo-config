@@ -1,0 +1,9 @@
+[Unit]
+Description=Run beets in-place import automatically
+
+[Service]
+Type=oneshot
+# -q: Quiet mode (fully automatic, no prompts)
+# -A: In-place (does not move or copy files, leaves them in ~/music)
+# -i: Incremental (skips everything beets has already tracked in ~/music)
+ExecStart=/usr/bin/beet import -q -A -i %h/music

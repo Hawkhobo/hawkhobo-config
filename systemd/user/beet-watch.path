@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch $MUSIC for albums manually added from $SLSK
+
+[Path]
+# PathChanged triggers when a file is finished writing/moving into the directory
+PathChanged=%h/music
+Unit=beet-import.service
+
+[Install]
+WantedBy=default.target
