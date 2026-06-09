@@ -11,6 +11,9 @@ export PATH="$HOME/projects/helpme:$PATH"
 export HELPME_EDITOR=nvim
 export PATH="$HOME/bin:$PATH"
 
+# default edtior
+export EDITOR=nvim
+
 if command -v ruby; then
   export GEM_HOME="$(ruby -e 'print Gem.user_dir')"
   export PATH="$PATH:$GEM_HOME/bin"
