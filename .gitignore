@@ -16,6 +16,10 @@ navidrome/plugins
 
 bash-aliases/discord
 
+# beets files
+*musiclibrary.db
+*state.pickle
+
 # don't include bank container files (spotify and other audio services)
 *.bnk
 
