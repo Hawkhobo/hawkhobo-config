@@ -1,0 +1,2 @@
+mp4-to-m4a() { ffmpeg -i "$1" -vn -c:a copy "${1%.*}.m4a"; }
+
