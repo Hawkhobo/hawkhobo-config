@@ -26,27 +26,28 @@ bash-aliases/discord
 *.xml
 
 # ignore non-configurable applications (or those configured in-session)
-teams-for-linux/
-libreoffice/
-jxbrowser/
-hyperbeam/
-font-manager/
-go/
-texlive/
-evolution/
-dconf/
-Slack/
-Signal/
-Notion/
 Code/
+dconf/
+evolution/
+font-manager/
 GIMP/
+go/
+hyperbeam/
+inkscape/
+jxbrowser/
+k3brc
+libreoffice/
 LyX/
-strawberry/
+Notion/
 obs-studio/
-zoom/
 # dolphin text editor
 session/
-k3brc
+Slack/
+Signal/
+strawberry/
+teams-for-linux/
+texlive/
+zoom/
 
 
 # ignore build files and dad's dotfiles
