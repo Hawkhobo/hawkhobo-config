@@ -1,9 +1,6 @@
-# ignore discord/ directory, except for configuration files
-discord/*
-!discord/
-!discord/*.json
+# ignore discord/ directory (only config is settings.json, system-level)
+discord/
 
-bash-aliases/discord
 # only save Qbittorrent settings
 qBittorrent/*
 !qBittorrent/
@@ -47,6 +44,10 @@ LyX/
 strawberry/
 obs-studio/
 zoom/
+# dolphin text editor
+session/
+k3brc
+
 
 # ignore build files and dad's dotfiles
 *dotfiles.2026*
@@ -66,3 +67,4 @@ zoom.conf
 #miscellanous
 emaildefaults
 menus/
+
