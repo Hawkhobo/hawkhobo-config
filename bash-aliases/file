@@ -37,10 +37,20 @@ alias desktops="cd /home/jacob/.local/share/applications"
 # pictures stored in Steam (update if needed)
 alias steam_pics="cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
 
-# rm interactive; use fzf to select a subset of files for deletion if there is no underlying pattern to leverage. Handles commas and spaces.
-alias rmi='find . -maxdepth 1 -type f -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 sudo rm'
+# rm interactive using fzf
+alias rmi='find . -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 sudo rm -r'
+
+# cd interactive using fzf
+cdi() {
+  local dir
+  dir=$(find . -type d -print0 | sort -z | fzf --read0)
+
+  # Only run cd if you actually picked something (prevents crashing/resetting if you hit ESC)
+  if [ -n "$dir" ]; then
+    cd "$dir"
+  fi
+}
 
 # mv interactive; specify an argument for folder to move to
 alias mvi='mvi() { find . -maxdepth 1 -type f -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 -o -I {} mv {} "$1"; }; mvi'
 
-# mv interactive; use fzf to select subset of files and move into a specified directory
