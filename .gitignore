@@ -40,6 +40,8 @@ libreoffice/
 LyX/
 Notion/
 obs-studio/
+okularrc
+okularpartrc
 # dolphin text editor
 session/
 Slack/
@@ -61,7 +63,6 @@ QtProject.conf
 audacity/audacity.cfg
 kid3rc
 nicotine/config
-okularrc
 zoomus.conf
 zoom.conf
 
