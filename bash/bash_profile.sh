@@ -27,6 +27,9 @@ shopt -s extglob
 # default (see bind -q edit-and-execute-command
 export VISUAL=nvim
 
+# local binaries
+echo 'export PATH="$HOME/.local/bin:$PATH"'
+
 # fuzzy finder config. allows for quick selection!
 export FZF_DEFAULT_OPTS=" \
   --layout=reverse \
