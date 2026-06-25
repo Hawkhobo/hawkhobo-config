@@ -18,19 +18,8 @@ alias ltr="ls -t | head -n 1 | xargs rm"
 # count number of visible entries in topmost parent directory of WD
 alias dir_top="ls -1F | grep -v / | wc -l"
 
-# download directory of soulseek nicotine+ app
-export SLSK="/home/jacob/.local/share/nicotine/downloads"
-# my music library
-export MUSIC="$HOME/music"
-
-
-
 # arch-wiki-docs main
 alias arch-wiki-docs="cd /usr/share/doc/arch-wiki/html/en"
-
-# kill processes then open navidrome, because navidrome is... parasitic
-# also should be in ~/.config to use LastFM API keys there
-alias nd="cd /home/jacob/.config/navidrome/ && sudo killall navidrome || true && navidrome"
 
 alias desktops="cd /home/jacob/.local/share/applications"
 
