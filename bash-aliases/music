@@ -1,10 +1,23 @@
 mp4-to-m4a() { ffmpeg -i "$1" -vn -c:a copy "${1%.*}.m4a"; }
 
+trim-audio() {
+    # extract file extension from input file
+    local ext="${3##*.}"
+    ffmpeg -ss "$1" -i "$3" -to "$2" -c copy "output.${ext}"
+}
+
 # download directory of soulseek nicotine+ app
-export SLSK="/home/jacob/.local/share/nicotine/downloads"
+export SLSK="$HOME/.local/share/nicotine/downloads"
 # my music library
 export MUSIC="$HOME/music"
+# Blue World Transmission sets
+export BWT="$HOME/mixxx/sets/bwt"
 
 # kill processes then open navidrome, because navidrome is... parasitic
 # also should be in ~/.config to use LastFM API keys there
 alias nd="cd /home/jacob/.config/navidrome/ && sudo killall navidrome || true && navidrome"
+
+
+# print cumulative runtime for all wavs, flacs and mp3's in the working directory
+alias track-runtime="find . -maxdepth 1 \( -iname \"*.wav\" -o -iname \"*.flac\" \) -exec ffprobe -v quiet -of csv=p=0 -show_entries format=duration {} \; | paste -sd+ - | bc | awk '{printf(\"%d:%02d:%02d\n\", (\$1/3600), (\$1/60)%60, \$1%60)}'"
+
