@@ -43,3 +43,8 @@ cdi() {
 # mv interactive; specify an argument for folder to move to
 alias mvi='mvi() { find . -maxdepth 1 -type f -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 -o -I {} mv {} "$1"; }; mvi'
 
+# xdg-open interactive
+alias xoi='find . -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 xdg-open'
+
+# connect to dad's openvpn
+alias matt-ovpn="sudo /usr/sbin/openvpn --suppress-timestamps --nobind --config /home/jacob/downloads/edge-UDP4-1201-jacobvpn-config.ovpn"
