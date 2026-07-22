@@ -1,9 +1,10 @@
 mp4-to-m4a() { ffmpeg -i "$1" -vn -c:a copy "${1%.*}.m4a"; }
 
-trim-audio() {
-    # extract file extension from input file
-    local ext="${3##*.}"
-    ffmpeg -ss "$1" -i "$3" -to "$2" -c copy "output.${ext}"
+trim-audio () {
+    local in="$1" start="$2" end="$3"
+    local ext="${in##*.}"
+    local base="${in%.*}"
+    ffmpeg -ss "$start" -to "$end" -i "$in" -c copy "${base} (trimmed).${ext}"
 }
 
 # download directory of soulseek nicotine+ app
