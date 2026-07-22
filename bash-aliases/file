@@ -48,3 +48,6 @@ alias xoi='find . -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 xdg-ope
 
 # connect to dad's openvpn
 alias matt-ovpn="sudo /usr/sbin/openvpn --suppress-timestamps --nobind --config /home/jacob/downloads/edge-UDP4-1201-jacobvpn-config.ovpn"
+alias tv-cast-resolution="hyprctl keyword monitor eDP-1,1920x1080,0x0,1"
+
+CERT="$HOME/projects/certivus"
