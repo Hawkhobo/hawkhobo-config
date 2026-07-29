@@ -22,3 +22,4 @@ alias nd="cd /home/jacob/.config/navidrome/ && sudo killall navidrome || true &&
 # print cumulative runtime for all wavs, flacs and mp3's in the working directory
 alias track-runtime="find . -maxdepth 1 \( -iname \"*.wav\" -o -iname \"*.flac\" \) -exec ffprobe -v quiet -of csv=p=0 -show_entries format=duration {} \; | paste -sd+ - | bc | awk '{printf(\"%d:%02d:%02d\n\", (\$1/3600), (\$1/60)%60, \$1%60)}'"
 
+alias notion-to-discogs="discogs-dlp --genre-index --track-index --save-m3u /home/jacob/playlists/BWT\ Unmixed.m3u --dir /home/jacob/.local/share/nicotine/downloads https://www.notion.so/FLAC-Hunting-3a0dae66c104804ca6f5ea5d1c20138f"
