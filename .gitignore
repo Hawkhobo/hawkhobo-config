@@ -12,6 +12,7 @@ navidrome/plugins
 *cache
 
 bash-aliases/discord
+bash-aliases/env
 
 # beets files
 *musiclibrary.db
