@@ -27,6 +27,7 @@ bash-aliases/env
 *.xml
 
 # ignore non-configurable applications (or those configured in-session)
+Antigravity/
 Code/
 dconf/
 evolution/
@@ -48,6 +49,7 @@ qBittorrent/
 session/
 Slack/
 Signal/
+sonic-visualiser/
 strawberry/
 teams-for-linux/
 texlive/
