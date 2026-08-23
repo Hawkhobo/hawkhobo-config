@@ -1,25 +1,25 @@
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(Terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(
 	mainMod .. " + M",
 	hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 )
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(FileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(Menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 
 --- Swap the location of the focused tiled window
-hl.bind(mainMod .. " + H", hl.dsp.window.movewindow({ mode = "left", action = "toggle" }))
-hl.bind(mainMod .. " + J", hl.dsp.window.movewindow({ mode = "down", action = "toggle" }))
-hl.bind(mainMod .. " + K", hl.dsp.window.movewindow({ mode = "up", action = "toggle" }))
-hl.bind(mainMod .. " + L", hl.dsp.window.movewindow({ mode = "right", action = "toggle" }))
+hl.bind(mainMod .. " + H", hl.dsp.window.move({ direction = "left", action = "toggle" }))
+hl.bind(mainMod .. " + J", hl.dsp.window.move({ direction = "down", action = "toggle" }))
+hl.bind(mainMod .. " + K", hl.dsp.window.move({ direction = "up", action = "toggle" }))
+hl.bind(mainMod .. " + L", hl.dsp.window.move({ direction = "right", action = "toggle" }))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
@@ -86,5 +86,5 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("strawberry -t"))
 hl.bind(mainMod .. " + EQUAL", hl.dsp.exec_cmd("strawberry --volume-up"), { repeating = true })
 hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("strawberry --volume-down"), { repeating = true })
-hl.bind(mainMod .. " SHIFT + P", hl.dsp.exec_cmd("strawberry --previous"))
-hl.bind(mainMod .. " SHIFT + N", hl.dsp.exec_cmd("strawberry --next"))
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("strawberry --previous"))
+hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("strawberry --next"))
