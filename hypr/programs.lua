@@ -1,0 +1,11 @@
+--- See https://wiki.hypr.land/Configuring/Keywords/
+
+--- Set programs that you use
+local fileManager = "dolphin"
+local menu = "rofi -show combi -modes combi -combi-modes 'window,drun,run'"
+
+--- ensures all open kitty terminals are unified under a single tmp file for remote sharing
+local terminal = "kitty --single-instance --listen-on unix:/tmp/mykitty"
+
+--- let World of Warcraft display fullscreen!
+windowrule = match:title ^(World of Warcraft)$, fullscreen 1, immediate on

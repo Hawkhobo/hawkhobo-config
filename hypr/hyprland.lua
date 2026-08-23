@@ -21,6 +21,8 @@ hl.monitor({
 	scale = "auto",
 })
 
+require("programs")
+
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
