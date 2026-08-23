@@ -8,4 +8,12 @@ local menu = "rofi -show combi -modes combi -combi-modes 'window,drun,run'"
 local terminal = "kitty --single-instance --listen-on unix:/tmp/mykitty"
 
 --- let World of Warcraft display fullscreen!
-windowrule = match:title ^(World of Warcraft)$, fullscreen 1, immediate on
+hl.windowrule({
+	name = "fullscreen-wow",
+	match = {
+		class = "^$",
+		title = "World of Warcraft",
+		fullscreen = true,
+		immediate = true,
+	},
+})
