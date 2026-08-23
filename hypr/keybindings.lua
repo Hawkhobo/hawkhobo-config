@@ -13,12 +13,24 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
+
+--- Swap the location of the focused tiled window
+hl.bind(mainMod .. " + H", hl.dsp.window.movewindow({ mode = "left", action = "toggle" }))
+hl.bind(mainMod .. " + J", hl.dsp.window.movewindow({ mode = "down", action = "toggle" }))
+hl.bind(mainMod .. " + K", hl.dsp.window.movewindow({ mode = "up", action = "toggle" }))
+hl.bind(mainMod .. " + L", hl.dsp.window.movewindow({ mode = "right", action = "toggle" }))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+
+--- Hyprshot keybinds
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output"))
+hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
+hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
@@ -69,3 +81,10 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+
+--- Strawberry functionality
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("strawberry -t"))
+hl.bind(mainMod .. " + EQUAL", hl.dsp.exec_cmd("strawberry --volume-up"), { repeating = true })
+hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("strawberry --volume-down"), { repeating = true })
+hl.bind(mainMod .. " SHIFT + P", hl.dsp.exec_cmd("strawberry --previous"))
+hl.bind(mainMod .. " SHIFT + N", hl.dsp.exec_cmd("strawberry --next"))
