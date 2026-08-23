@@ -12,25 +12,12 @@
 ------------------
 ---- MONITORS ----
 ------------------
-
--- See https://wiki.hypr.land/Configuring/Basics/Monitors/
-hl.monitor({
-	output = "",
-	mode = "preferred",
-	position = "auto",
-	scale = "auto",
-})
-
-require("programs")
+require("monitors")
 
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
-
--- Set programs that you use
-local terminal = "kitty"
-local fileManager = "dolphin"
-local menu = "hyprlauncher"
+require("programs")
 
 -------------------
 ---- AUTOSTART ----
@@ -50,11 +37,7 @@ local menu = "hyprlauncher"
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
-
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
-
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
+require("env")
 
 -----------------------
 ----- PERMISSIONS -----
