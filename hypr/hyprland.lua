@@ -80,6 +80,10 @@ hl.config({
 	misc = {
 		force_default_wallpaper = -1, -- Set to 0 or 1 to disable the anime mascot wallpapers
 		disable_hyprland_logo = false, -- If true disables the random hyprland logo / anime girl background. :(
+		-- Autostart workspace tokens expire after this many seconds. The default (10)
+		-- is too short for slow Electron starts (discord), which then land on
+		-- whatever workspace is focused instead of their assigned one.
+		initial_workspace_token_timeout = 60,
 	},
 })
 
