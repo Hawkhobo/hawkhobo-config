@@ -15,6 +15,9 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
+--- Kill all active windows
+hl.bind("CTRL + ALT + DELETE", hl.dsp.exec_cmd("hyprctl -j clients | jq -r '.[].pid' | xargs -r kill -9"))
+
 --- Swap the location of the focused tiled window
 hl.bind(mainMod .. " + H", hl.dsp.window.move({ direction = "left", action = "toggle" }))
 hl.bind(mainMod .. " + J", hl.dsp.window.move({ direction = "down", action = "toggle" }))
