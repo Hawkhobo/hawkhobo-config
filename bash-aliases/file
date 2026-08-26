@@ -21,7 +21,7 @@ alias dir_top="ls -1F | grep -v / | wc -l"
 # arch-wiki-docs main
 alias arch-wiki-docs="cd /usr/share/doc/arch-wiki/html/en"
 
-alias desktops="cd /home/jacob/.local/share/applications"
+DESKTOP="$HOME/.local/share/applications"
 
 # pictures stored in Steam (update if needed)
 alias steam_pics="cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
@@ -47,7 +47,7 @@ alias mvi='mvi() { find . -maxdepth 1 -type f -print0 | sort -z | fzf --read0 -m
 alias xoi='find . -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 xdg-open'
 
 # connect to dad's openvpn
-alias matt-ovpn="sudo /usr/sbin/openvpn --suppress-timestamps --nobind --config /home/jacob/downloads/edge-UDP4-1201-jacobvpn-config.ovpn"
+alias dad-ovpn="sudo /usr/sbin/openvpn --suppress-timestamps --nobind --config /home/jacob/edge-UDP4-1201-jacobvpn-config.ovpn"
 alias tv-cast-resolution="hyprctl keyword monitor eDP-1,1920x1080,0x0,1"
 
 CERT="$HOME/projects/certivus"
