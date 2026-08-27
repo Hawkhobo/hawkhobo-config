@@ -143,6 +143,10 @@ hl.window_rule({
 	no_focus = true,
 })
 
+--- Fix pixelation issue on XWayland windows on HiDPI screens
+--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/XWayland/ for troubleshooting
+hl.config({ xwayland = { force_zero_scaling = true } })
+
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
 --     name  = "no-anim-overlay",
