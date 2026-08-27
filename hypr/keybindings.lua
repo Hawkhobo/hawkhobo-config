@@ -96,10 +96,10 @@ hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("strawberry --volume-down"), { re
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("strawberry --previous"))
 hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("strawberry --next"))
 hl.bind(
-	mainMod .. " + SHIFT + 1",
+	mainMod .. " + SHIFT + M",
 	hl.dsp.exec_cmd([[playerctl metadata --player=strawberry xesam:url >> "$HOME/playlists/BWT Mixed.m3u"]])
 )
 hl.bind(
-	mainMod .. " + SHIFT + 2",
+	mainMod .. " + SHIFT + U",
 	hl.dsp.exec_cmd([[playerctl metadata --player=strawberry xesam:url >> "$HOME/playlists/BWT Unmixed.m3u"]])
 )
