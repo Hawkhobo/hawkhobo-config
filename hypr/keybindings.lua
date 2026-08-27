@@ -16,6 +16,9 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
+--- Toggle visual display on and off
+hl.bind(mainMod .. " + O", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/toggle_display.sh"))
+
 --- Kill all active windows
 hl.bind("CTRL + ALT + DELETE", hl.dsp.exec_cmd("hyprctl -j clients | jq -r '.[].pid' | xargs -r kill -9"))
 
@@ -92,3 +95,11 @@ hl.bind(mainMod .. " + EQUAL", hl.dsp.exec_cmd("strawberry --volume-up"), { repe
 hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("strawberry --volume-down"), { repeating = true })
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("strawberry --previous"))
 hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("strawberry --next"))
+hl.bind(
+	mainMod .. " + SHIFT + 1",
+	hl.dsp.exec_cmd([[playerctl metadata --player=strawberry xesam:url >> "$HOME/playlists/BWT Mixed.m3u"]])
+)
+hl.bind(
+	mainMod .. " + SHIFT + 2",
+	hl.dsp.exec_cmd([[playerctl metadata --player=strawberry xesam:url >> "$HOME/playlists/BWT Unmixed.m3u"]])
+)
