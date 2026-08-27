@@ -1,0 +1,6 @@
+# Intercepts ssh to emit a bell, which Kitty translates into an alert via Fnott
+ssh() {
+    # Send a terminal bell to Kitty immediately before launching ssh
+    printf '\a'
+    command ssh "$@"
+}

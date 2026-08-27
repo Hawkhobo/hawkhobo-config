@@ -21,8 +21,6 @@ alias dir_top="ls -1F | grep -v / | wc -l"
 # arch-wiki-docs main
 alias arch-wiki-docs="cd /usr/share/doc/arch-wiki/html/en"
 
-DESKTOP="$HOME/.local/share/applications"
-
 # pictures stored in Steam (update if needed)
 alias steam_pics="cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
 
