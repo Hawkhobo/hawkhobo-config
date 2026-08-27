@@ -15,6 +15,8 @@ hl.on("hyprland.start", function()
 
 	hl.exec_cmd(Terminal, { workspace = "3 silent" })
 
+	hl.exec_cmd("$LOCAL_BIN/DigitalZen.desktop", { workspace = "7 silent" })
+
 	hl.exec_cmd("discord", { workspace = "8 silent" })
 	hl.exec_cmd("signal-desktop", { workspace = "8 silent" })
 	hl.exec_cmd("slack", { workspace = "8 silent" })
