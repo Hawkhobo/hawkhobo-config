@@ -15,5 +15,5 @@ hl.monitor({
 	output = "desc:Samsung Electric Company SAMSUNG",
 	mode = "1920x1080@60",
 	position = "auto-right",
-	scale = 3,
+	scale = 1.5,
 })
