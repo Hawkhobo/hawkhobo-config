@@ -16,8 +16,9 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
---- Toggle visual display on and off
-hl.bind(mainMod .. " + O", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/toggle_display.sh"))
+--- Toggle the laptop panel on and off. Scoped to eDP-1 so an attached TV
+--- keeps rendering; Hyprland tracks the DPMS state itself.
+hl.bind(mainMod .. " + O", hl.dsp.dpms({ action = "toggle", monitor = "eDP-1" }))
 
 --- Kill all active windows
 hl.bind("CTRL + ALT + DELETE", hl.dsp.exec_cmd("hyprctl -j clients | jq -r '.[].pid' | xargs -r kill -9"))
