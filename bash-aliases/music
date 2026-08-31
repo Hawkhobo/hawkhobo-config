@@ -25,3 +25,5 @@ alias track-runtime="find . -maxdepth 1 \( -iname \"*.wav\" -o -iname \"*.flac\"
 alias notion-to-discogs="discogs-dlp --genre-index --track-index --save-m3u /home/jacob/playlists/BWT\ Stage.m3u --dir /home/jacob/.local/share/nicotine/downloads https://www.notion.so/FLAC-Hunting-3a0dae66c104804ca6f5ea5d1c20138f"
 
 alias m3u-to-discogs="discogs-dlp --genre-index --track-index --save-m3u /home/jacob/playlists/BWT\ Unmixed.m3u --dir /home/jacob/.local/share/nicotine/downloads /home/jacob/playlists/BWT\ Mixed.m3u"
+
+alias boot-traktor="cd $HOME/projects/traktor-kontrol-s4-mk1-driver-linux/build && ./traktor_kontrol_s4_mk1_driver_linux --logMode console"
