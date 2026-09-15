@@ -24,27 +24,6 @@ alias arch-wiki-docs="cd /usr/share/doc/arch-wiki/html/en"
 # pictures stored in Steam (update if needed)
 alias steam_pics="cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
 
-# cd interactive using fzf
-cdi() {
-  local dir
-  dir=$(find . -type d -print0 | sort -z | fzf --read0)
-
-  # Only run cd if you actually picked something (prevents crashing/resetting if you hit ESC)
-  if [ -n "$dir" ]; then
-    cd "$dir"
-  fi
-}
-
-# mv interactive; specify an argument for folder to move to
-alias mvi='mvi() { find . -maxdepth 1 -type f -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 -o -I {} mv {} "$1"; }; mvi'
-
-# xdg-open interactive
-alias xoi='find . -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 xdg-open'
-
-# connect to dad's openvpn
-alias dad-ovpn="sudo /usr/sbin/openvpn --suppress-timestamps --nobind --config /home/jacob/edge-UDP4-1201-jacobvpn-config.ovpn"
 alias tv-cast-resolution="hyprctl keyword monitor eDP-1,1920x1080,0x0,1"
-
-CERT="$HOME/projects/certivus"
 
 alias restart-audio="systemctl --user restart pipewire wireplumber pipewire-pulse"
