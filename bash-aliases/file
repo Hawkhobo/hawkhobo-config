@@ -24,9 +24,6 @@ alias arch-wiki-docs="cd /usr/share/doc/arch-wiki/html/en"
 # pictures stored in Steam (update if needed)
 alias steam_pics="cd ~/.local/share/Steam/userdata/102112720/760/remote/4570/screenshots/"
 
-# rm interactive using fzf
-alias rmi='find . -print0 | sort -z | fzf --read0 -m --print0 | xargs -0 sudo rm -r'
-
 # cd interactive using fzf
 cdi() {
   local dir
@@ -49,3 +46,5 @@ alias dad-ovpn="sudo /usr/sbin/openvpn --suppress-timestamps --nobind --config /
 alias tv-cast-resolution="hyprctl keyword monitor eDP-1,1920x1080,0x0,1"
 
 CERT="$HOME/projects/certivus"
+
+alias restart-audio="systemctl --user restart pipewire wireplumber pipewire-pulse"
