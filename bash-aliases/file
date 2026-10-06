@@ -4,6 +4,11 @@ xo() {
     xdg-open "$@" &>/dev/null 2>1 & disown
 }
 
+# non-recursive cd fires ls
+cd() {
+    builtin cd "$@" && ls
+}
+
 # open docker desktop on this system
 alias docker_desktop="systemctl --user start docker-desktop"
 
