@@ -16,6 +16,20 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
+local fnott_is_paused = false
+-- toggle notification daemon
+hl.bind(mainMod .. "+ N", function()
+	if fnott_is_paused then
+		hl.exec_cmd("fnottctl unpause")
+		fnott_is_paused = false
+		hl.notification.create({ text = "Notifications Resumed", timeout = 2000 })
+	else
+		hl.exec_cmd("fnottctl pause")
+		fnott_is_paused = true
+		hl.notification.create({ text = "Notifications Paused (DND)", timeout = 2000 })
+	end
+end)
+
 --- Toggle the laptop panel on and off. Scoped to eDP-1 so an attached TV
 --- keeps rendering; Hyprland tracks the DPMS state itself.
 hl.bind(mainMod .. " + O", hl.dsp.dpms({ action = "toggle", monitor = "eDP-1" }))
