@@ -1,6 +1,8 @@
 # ignore discord/ directory (only config is settings.json, system-level)
 discord/
 
+aerc/accounts.conf
+
 # only save Qbittorrent settings
 qBittorrent/*
 !qBittorrent/
