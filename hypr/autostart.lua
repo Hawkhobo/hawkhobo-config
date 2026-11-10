@@ -11,15 +11,22 @@ hl.on("hyprland.start", function()
 
 	hl.exec_cmd("notion-app", { workspace = "1 silent" })
 
-	hl.exec_cmd("firefox https://www.gmail.com https://news.ycombinator.com", { workspace = "2 silent" })
+	hl.exec_cmd(
+		"firefox https://www.gmail.com \z
+			 https://news.ycombinator.com \z
+			 https://www.google.com/travel/flights/saves",
+		{ workspace = "2 silent" }
+	)
 
 	hl.exec_cmd(Terminal, { workspace = "3 silent" })
+	hl.exec_cmd("localsend", { workspace = "3 silent" })
 
-	hl.exec_cmd("$LOCAL_BIN/DigitalZen.desktop", { workspace = "7 silent" })
+	hl.exec_cmd("$LOCAL_BIN/DigitalZen.AppImage", { workspace = "7 silent" })
 
 	hl.exec_cmd("discord", { workspace = "8 silent" })
 	hl.exec_cmd("signal-desktop", { workspace = "8 silent" })
 	hl.exec_cmd("slack", { workspace = "8 silent" })
+	hl.exec_cmd(Terminal .. "whatscli", { workspace = "8 silent" })
 
 	hl.exec_cmd("pavucontrol", { workspace = "9 silent" })
 	hl.exec_cmd("blueman-manager", { workspace = "9 silent" })
